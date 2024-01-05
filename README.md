@@ -62,6 +62,18 @@ The teachers' weights are stored in `teacher_weights/`
 We currently provide examples where the teacher is MinkLoc++ and the student is ResNet18+GeM (MinkLoc++2D):
 
 ```
+# oxford
+python train.py  --model minklocmmcat  \
+    --teacher_weights_path teacher_weights/oxford__T:minklocmmcat__resnet18__img256__pc128__32_64_64__1_1_1__1__allstgF__b128__trainteacher/models/r1_best_ep57_97.24.pth  \
+    --rkdgloss_weight 10  --crosslogitdistloss_weight_st2ss 0.1  --crosslogitsimloss_weight_st2ss 0.1  --crosslogitgeodistloss_weight_st2ss 0.1;
+
+
+# boreas
+python train.py  --model minklocmmcat  \
+    --teacher_weights_path teacher_weights/boreas__T:minklocmmcat__resnet18__img256__pc128__32_64_64__1_1_1__1__allstgF__b128__trainteacher/models/r1_best_ep48_93.05.pth  \
+    --tryid 0  --rkdgloss_weight 1  --crosslogitdistloss_weight_st2ss 0.1  --crosslogitsimloss_weight_st2ss 0.1  --crosslogitgeodistloss_weight_st2ss 0.1;
+
+
 
 ```
 
