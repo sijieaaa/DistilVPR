@@ -72,9 +72,6 @@ python train.py  --model minklocmmcat  \
 python train.py  --model minklocmmcat  \
     --teacher_weights_path teacher_weights/boreas__T:minklocmmcat__resnet18__img256__pc128__32_64_64__1_1_1__1__allstgF__b128__trainteacher/models/r1_best_ep48_93.05.pth  \
     --tryid 0  --rkdgloss_weight 1  --crosslogitdistloss_weight_st2ss 0.1  --crosslogitsimloss_weight_st2ss 0.1  --crosslogitgeodistloss_weight_st2ss 0.1;
-
-
-
 ```
 
 
