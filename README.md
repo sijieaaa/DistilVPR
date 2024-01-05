@@ -2,8 +2,9 @@
 
 (AAAI 2024) DistilVPR: Cross-Modal Knowledge Distillation for Visual Place Recognition
 
-<img src="https://github.com/sijieaaa/DistilVPR/blob/main/teaser.png" width=400>
+[ArXiv](https://arxiv.org/abs/2312.10616)
 
+<img src="https://github.com/sijieaaa/DistilVPR/blob/main/teaser.png" width=400>
 
 
 ## Installation
