@@ -1,0 +1,40 @@
+# Config for training a multi-modal model with point clouds and RGB images on Baseline dataset (RobotCar)
+[DEFAULT]
+num_points = 4096
+
+#dataset_folder = /home/sijie/vpr/benchmark_datasets
+#image_path = /home/sijie/vpr/RobotCar_checked_image
+
+#dataset_folder = /scratch/users/ntu/wang1679/vpr/benchmark_datasets
+#image_path = /scratch/users/ntu/wang1679/vpr/RobotCar_checked_image
+
+dataset_folder = /scratch/users/ntu/wang1679/vpr/benchmark_datasets
+image_path = /scratch/users/ntu/wang1679/vpr/RobotCar_checked_image
+
+
+[TRAIN]
+num_workers = 8
+batch_size = 80
+val_batch_size = 160
+batch_size_limit = 80
+batch_expansion_rate = 1.4
+batch_expansion_th = 0.7
+
+
+lr = 1e-3
+image_lr = 1e-4
+epochs = 60
+scheduler_milestones = 40
+
+aug_mode = 1
+weight_decay = 1e-4
+
+loss = MultiBatchHardTripletMarginLoss
+weights = 0.5, 0.5, 0.0
+normalize_embeddings = False
+margin = 0.2
+
+
+#train_file = training_queries_baseline.pickle
+#val_file = test_queries_baseline.pickle
+train_file = training_queries_baseline.pickle
