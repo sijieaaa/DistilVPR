@@ -1,6 +1,6 @@
 # DistilVPR
 
-(AAAI 2024) DistilVPR: Cross-Modal Knowledge Distillation for Visual Place Recognition
+(AAAI 2024) DistilVPR: Cross-Modal Knowledge Distillation for Visual Place Recognition 🚀🚀🚀
 
 [ArXiv](https://arxiv.org/abs/2312.10616)
 
