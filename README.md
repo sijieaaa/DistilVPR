@@ -45,7 +45,7 @@
 
 ## Dataset
 
-The datasets are uploaded at Google Drive. Please download them and unzip them. You need to change some arguments in `tools/options.py` as the directories:
+The datasets are uploaded at [Google Drive](https://drive.google.com/drive/folders/13-3hhL0XzhXzhPULlbhuvYE6vnwxP3tE?usp=sharing). Please download them and unzip them. You need to change some arguments in `tools/options.py` as the directories:
 
 ```
 --dataset
@@ -71,7 +71,7 @@ python train.py  --model minklocmmcat  \
 # boreas
 python train.py  --model minklocmmcat  \
     --teacher_weights_path teacher_weights/boreas__T:minklocmmcat__resnet18__img256__pc128__32_64_64__1_1_1__1__allstgF__b128__trainteacher/models/r1_best_ep48_93.05.pth  \
-    --tryid 0  --rkdgloss_weight 1  --crosslogitdistloss_weight_st2ss 0.1  --crosslogitsimloss_weight_st2ss 0.1  --crosslogitgeodistloss_weight_st2ss 0.1;
+    --rkdgloss_weight 1  --crosslogitdistloss_weight_st2ss 0.1  --crosslogitsimloss_weight_st2ss 0.1  --crosslogitgeodistloss_weight_st2ss 0.1;
 ```
 
 
