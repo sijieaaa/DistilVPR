@@ -79,10 +79,13 @@ python train.py  --model minklocmmcat  \
 ## Citation
 
 ```
-@article{wang2023distilvpr,
+@inproceedings{wang2024distilvpr,
   title={DistilVPR: Cross-Modal Knowledge Distillation for Visual Place Recognition},
   author={Wang, Sijie and She, Rui and Kang, Qiyu and Jian, Xingchao and Zhao, Kai and Song, Yang and Tay, Wee Peng},
-  journal={arXiv preprint arXiv:2312.10616},
-  year={2023}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={9},
+  pages={10377--10385},
+  year={2024}
 }
 ```
