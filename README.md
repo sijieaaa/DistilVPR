@@ -53,7 +53,7 @@ The datasets are uploaded at [Google Drive](https://drive.google.com/drive/folde
 --image_path
 ```
 
-The teachers' weights are stored in `teacher_weights/`
+The teachers' weights are stored in `teacher_weights/`, which is also uploaded at [Google Drive](https://drive.google.com/drive/folders/13-3hhL0XzhXzhPULlbhuvYE6vnwxP3tE?usp=sharing).
 
 
 
