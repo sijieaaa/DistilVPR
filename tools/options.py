@@ -112,8 +112,8 @@ class Options():
 
 
         self.parser.add_argument('--teacher_weights_path', type=str, 
-            # default='teacher_weights/boreas__T:minklocmmcat__resnet18__img256__pc128__32_64_64__1_1_1__1__allstgF__b128__trainteacher/models/r1_best_ep48_93.05.pth'
-            default='teacher_weights/oxford__T:minklocmmcat__resnet18__img256__pc128__32_64_64__1_1_1__1__allstgF__b128__trainteacher/models/r1_best_ep57_97.24.pth',
+            # default='teacher_weights/boreas__T-minklocmmcat__resnet18__img256__pc128__32_64_64__1_1_1__1__allstgF__b128__trainteacher/models/r1_best_ep48_93.05.pth'
+            default='teacher_weights/oxford__T-minklocmmcat__resnet18__img256__pc128__32_64_64__1_1_1__1__allstgF__b128__trainteacher/models/r1_best_ep57_97.24.pth',
         )
 
 
@@ -267,7 +267,7 @@ class Options():
 
 
         # ---- teacher model
-        self.args.exp_name += f'__T:{self.args.model}'
+        self.args.exp_name += f'__T-{self.args.model}'
 
         if self.args.model in ['minklocmmadd', 'minklocmmcat']:
             # self.args.exp_name += f'++minkmm'
@@ -285,7 +285,7 @@ class Options():
 
         # ---- student model
         if self.args.train_mode == 'train_student':
-            self.args.exp_name += f'__S:{self.args.student_model}'
+            self.args.exp_name += f'__S-{self.args.student_model}'
 
             if self.args.student_model in ['resnet18','resnet34']:
                 self.args.exp_name += f'__{self.args.student_output_dim}'
